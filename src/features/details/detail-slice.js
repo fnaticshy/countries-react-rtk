@@ -43,6 +43,8 @@ const detailSlice = createSlice({
       .addCase(loadNeighborsByBorder.fulfilled, (stata, action) => {
         stata.neighbors = action.payload.data.map(country => country.name);
       })
+
+      // .addMatcher()
   })
 });
 
